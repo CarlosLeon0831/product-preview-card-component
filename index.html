@@ -13,25 +13,27 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <div class="image__container">
-      <img src="./images/image-product-desktop.jpg" />
-      <img src="./images/image-product-mobile.jpg" />
-    </div>
-    <div class="info__container">
-      <p class="overline">PERFUME</p>
-      <h1>Gabrielle Essence Eau De Parfum</h1>
-      <p>
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <div class="price__container">
-        <h1 id="current__price">$149.99</h1>
-        <p class="previous__price">$169.99</p>
+    <main class="container">
+      <div class="image__container">
+        <img src="./images/image-product-desktop.jpg" id="desktopImage"/>
+        <img src="./images/image-product-mobile.jpg" id="mobileImage"/>
       </div>
-      <button>
-        <img src="./images/icon-cart.svg" alt="shopping cart" /> to Cart
-      </button>
-    </div>
+      <div class="info__container">
+        <p class="overline">PERFUME</p>
+        <h1 class="title">Gabrielle Essence Eau <br>De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price__container">
+          <h1 id="current-price">$149.99</h1>
+          <p class="previous-price">$169.99</p>
+        </div>
+        <button class="price__button">
+          <img src="./images/icon-cart.svg" alt="shopping cart" />Add to Cart
+        </button>
+      </div>
+    </main>
     <footer>
       <div class="attribution">
         Challenge by

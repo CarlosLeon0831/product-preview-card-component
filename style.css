@@ -12,6 +12,21 @@ body {
   background: var(--bg-color);
   color: var(--text);
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 2.2rem;
+  line-height: 2rem;
+  color: var(--heading);
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5rem;
 }
 
 footer {
@@ -24,6 +39,53 @@ footer {
   padding-bottom: 10px;
 }
 
+.container {
+  display: flex;
+  width: 600px;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-bg);
+  border-radius: 10px;
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.image__container img {
+  height: 450px;
+  border-radius: 10px 0 0 10px;
+}
+
+.overline {
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 3px;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.price__container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+#current-price {
+  color: var(--accent);
+}
+
+.previous-price {
+  text-decoration: line-through 1px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -32,10 +94,37 @@ footer {
   color: var(--accent);
 }
 
+.price__button {
+  background-color: var(--accent);
+  border: none;
+  border-radius: 10px;
+  padding: 18px;
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.price__button:hover {
+  background-color: var(--dark-accent);
+  cursor: pointer;
+}
+
+#mobileImage {
+  display: none;
+}
+
+#desktopImage {
+  display: block;
+}
+
 :root {
   /* Primary */
   --accent: hsl(158, 36%, 37%);
-  --bg-color: hsl(30, 38%, 92%);
+  --dark-accent: hsl(156, 42%, 18%);
+  --bg-color: hsl(32, 37%, 92%);
   /* neutral */
   --heading: hsl(212, 21%, 14%);
   --text: hsl(228, 12%, 48%);
@@ -44,3 +133,4 @@ footer {
 
 @media screen and (max-width: 375px) {
 }
+
