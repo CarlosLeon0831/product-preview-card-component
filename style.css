@@ -68,6 +68,7 @@ footer {
 
 .title {
   margin-bottom: 1rem;
+  padding-right: 50px;
 }
 
 .price__container {
@@ -76,10 +77,6 @@ footer {
   justify-content: left;
   gap: 15px;
   margin-bottom: 15px;
-}
-
-#current-price {
-  color: var(--accent);
 }
 
 .previous-price {
@@ -112,6 +109,7 @@ footer {
   cursor: pointer;
 }
 
+
 #mobileImage {
   display: none;
 }
@@ -119,6 +117,11 @@ footer {
 #desktopImage {
   display: block;
 }
+
+#current-price {
+  color: var(--accent);
+}
+
 
 :root {
   /* Primary */
@@ -132,5 +135,40 @@ footer {
 }
 
 @media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    width: 345px;
+    height: 600px;
+  }
+
+  .image__container img {
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .info__container {
+    padding: 30px;
+  }
+
+  .info__container p {
+    margin-bottom: 0;
+  }
+
+  .title {
+    padding-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .price__container {
+    margin-bottom: 0;
+  }
+
+  #mobileImage {
+    display: block;
+  }
+  #desktopImage {
+    display: none;
+  }
+
 }
 
