@@ -1,8 +1,9 @@
+
 /* * {
   border: 1px solid red;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;700&display=swap');
+@import url("https://rsms.me/inter/inter.css");
 
 html,
 body {
@@ -13,19 +14,33 @@ body {
   color: var(--text);
   font-size: 14px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+header {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  height: 25px;
+}
+
 h1 {
-  font-family: 'Fraunces', serif;
-  font-size: 2.2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
   line-height: 2rem;
   color: var(--heading);
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5rem;
 }
 
@@ -37,6 +52,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
+  margin-top: 10px;
 }
 
 .container {
@@ -46,7 +62,9 @@ footer {
   align-items: center;
   justify-content: center;
   background: var(--card-bg);
-  border-radius: 10px;
+  border-radius: 15px;
+  border: 5px solid var(--accent);
+  box-shadow: 10px 10px var(--accent);
 }
 
 .info__container {
@@ -68,7 +86,7 @@ footer {
 
 .title {
   margin-bottom: 1rem;
-  padding-right: 50px;
+  padding-right: 10px;
 }
 
 .price__container {
@@ -76,7 +94,7 @@ footer {
   align-items: center;
   justify-content: left;
   gap: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .previous-price {
@@ -84,6 +102,7 @@ footer {
 }
 
 .attribution {
+  font-family: "Inter", sans-serif;
   font-size: 11px;
   text-align: center;
 }
@@ -109,7 +128,6 @@ footer {
   cursor: pointer;
 }
 
-
 #mobileImage {
   display: none;
 }
@@ -122,32 +140,42 @@ footer {
   color: var(--accent);
 }
 
-
 :root {
   /* Primary */
-  --accent: hsl(158, 36%, 37%);
-  --dark-accent: hsl(156, 42%, 18%);
-  --bg-color: hsl(32, 37%, 92%);
+  --accent: hsl(34, 96%, 59%);
+  --dark-accent: hsl(29, 87%, 55%);
+  --bg-color: hsl(0, 0%, 100%);
   /* neutral */
-  --heading: hsl(212, 21%, 14%);
+  --heading: hsl(199, 78%, 7%);
   --text: hsl(228, 12%, 48%);
   --card-bg: hsl(0, 0%, 100%);
 }
 
 @media screen and (max-width: 375px) {
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.3rem;
+  }
+
   .container {
     flex-direction: column;
-    width: 345px;
-    height: 600px;
+    width: 285.83px;
+    height: 530px;
+    box-shadow: 5px 5px var(--accent);
   }
 
   .image__container img {
-    height: 240px;
+    height: 200px;
     border-radius: 10px 10px 0 0;
   }
 
   .info__container {
-    padding: 30px;
+    padding: 20px;
   }
 
   .info__container p {
@@ -169,6 +197,4 @@ footer {
   #desktopImage {
     display: none;
   }
-
 }
-
